@@ -1,8 +1,9 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as Cloud from '../lib/cloud-stack';
+import * as Cloud from './cloud-stack';
 
-test('Empty Stack', () => {
+describe("cloud-stack", () => {
+  it('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
     const stack = new Cloud.CloudStack(app, 'MyTestStack');
@@ -10,4 +11,5 @@ test('Empty Stack', () => {
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
     }, MatchStyle.EXACT))
+  });
 });

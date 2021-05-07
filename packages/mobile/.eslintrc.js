@@ -18,7 +18,6 @@ module.exports = {
     SharedArrayBuffer: "readonly",
   },
   parser: "@typescript-eslint/parser",
-  ignorePatterns: [".eslintrc.js"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
