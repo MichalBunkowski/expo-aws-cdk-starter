@@ -6,7 +6,7 @@ describe("cloud-stack", () => {
   it('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new Cloud.CloudStack(app, 'MyTestStack');
+    const stack = new Cloud.Stack(app, 'MyTestStack');
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
