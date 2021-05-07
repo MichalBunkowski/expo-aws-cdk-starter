@@ -1,0 +1,18 @@
+{
+  "name": "expo-aws-cdk-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "orochizu <michalbunkowski@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts ": {
+    "ios": "lerna run ios --scope=@app/mobile --stream --",
+    "android": "lerna run android --scope=@app/mobile --stream --"
+  },
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "expo-yarn-workspaces": "^1.5.1",
+    "lerna": "^4.0.0",
+    "typescript": "^4.2.4"
+  }
+}
